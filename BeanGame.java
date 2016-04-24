@@ -9,7 +9,7 @@ import javafx.animation.*;
 import javafx.util.Duration;
 import java.security.SecureRandom;
 import javafx.event.*;
-public class BeanGame extends Application{//U10416038 °¨¹Å¨}
+public class BeanGame extends Application{//U10416038 Â°Â¨Â¹Ã…Â¨}
 	int count;
 	@Override  // Override the start method in the Application class
 	public void start(Stage primaryStage) {
@@ -18,11 +18,13 @@ public class BeanGame extends Application{//U10416038 °¨¹Å¨}
 		side.getPoints().addAll(210.0,50.0,210.0,90.0,110.0,300.0,110.0,360.0,350.0,360.0,350.0,300.0,250.0,90.0,250.0,50.0);//draw the polyline
 		side.setFill(Color.WHITE);		//paint white the shape of polyline
 		pane.getChildren().add(side);	//add polyline to pane
+	
 		Line line[] = new Line[7];		//Create the lines
 		for(int i = 0;i<7;i++){//add lines to pane
 			line[i] = new Line(140.0+(i*30.0),300.0,140.0+(i*30.0),360.0);
 			pane.getChildren().add(line[i]);
 		}
+	
 		Circle circle[]=new Circle[28];//Create the circles
 		for(int i = 0;i<28;i++){//Add circles to pane
 			if(i>=0&&i<=6){
